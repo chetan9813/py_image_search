@@ -39,7 +39,7 @@ def get_urls_of_images(prompt):
         urls.remove(urls[0])  # Remove the first URL (usually a logo or irrelevant)
     return urls
 
-fixed_prompt = "ymca faridabad"
+fixed_prompt = "your_college_name_+_city_name"
 temp_prompt = input("Give the temp_prompt : ")
 
 open_in_browser(get_urls_of_images(temp_prompt + fixed_prompt), 2)
